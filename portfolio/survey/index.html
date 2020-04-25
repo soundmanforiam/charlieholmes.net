@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey Page Example</title>
+    <meta name="desription" content="">
+    <meta name="author" content="Charlie Holmes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1 id="title">Music Preferance</h1>
+        
+    </header>
+
+    <p id="description">We want to know what kind of music most people like and when.</p>
+
+    <form id="survey-form" action="" method="">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required /><br />
+        
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address." required /><br />
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" name="age" type="number" min="18" max="99" placeholder="Enter your age." /><br />
+
+        <p>When do you most enjoy listing to music?</p>        
+        
+        <select id="dropdown" name="when" required/>
+            <option disabled selected value>Select Activity</option>
+            <option value="relaxing">Relaxing</option>
+            <option value="running">Running</option>
+            <option value="working">Working</option>
+            <option value="showering">Showering</option>
+            <option value="sleeping">Sleeping</option>
+            <option value="dancing">Dancing</option>
+            <option value="always">Always</option>
+            <option value="other">Other</option>
+      </select>
+
+      <p>What Style of Music do you prefer to listen to while doing this activity?</p>
+
+        <label>
+            <input name="user-recommend" value="rock" type="radio" checked/>
+                Rock
+        </label><br>
+
+        <label>
+            <input name="user-recommend" value="country" type="radio" checked/>
+                Country
+        </label><br>
+    
+        <label>
+            <input name="user-recommend" value="classical" type="radio" checked/>
+                Classical
+        </label><br>
+        
+        <label>
+            <input name="user-recommend" value="rap" type="radio" checked/>
+                Rap
+        </label>
+    
+        <p>What emotion do you associate with that style of music?</p>
+    
+        <select id="most-like" name="emotion" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="happiness">Happiness</option>
+                <option value="anger">Anger</option>
+                <option value="peace">Peace</option>
+                <option value="love">Love</option>
+                <option value="other">Other</option>
+        </select>
+        
+        <p>Which other styles do you enjoy?</p>
+        
+        <label>
+            <input name="other-styles" value="rock" type="checkbox" />
+                Rock
+        </label><br>
+
+        <label>
+            <input name="other-styles" value="country" type="checkbox" />
+                Country
+        </label><br>
+
+        <label>
+            <input name="other-styles" value="classical" type="checkbox" />
+                Classical
+        </label><br>
+
+        <label>
+            <input name="other-styles" value="rap" type="checkbox" />
+                Rap
+        
+        </label>
+
+        <p>Any comments or suggestions?</p>
+
+        <textarea id="comments" name="comment" placeholder="Enter your comment here..." ></textarea>
+
+        <button type="submit" id="submit">
+            Submit
+        </button>
+        
+        
+    </form>
+
+</div>
+</body>
+</html> 

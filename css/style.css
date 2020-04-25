@@ -1,0 +1,125 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+}
+
+.sun {
+    background-image: radial-gradient(farthest-corner at 10px 10px, red 2%, orange 10%, yellow 15%, hsla(275, 100%, 5%, 0) 30%);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0px !important;
+    color: white !important;
+    background-color: rgba(255, 0, 0, 0.5) !important;
+    width: 100vw;
+    border-bottom: 1px solid white !important;
+    z-index: 10000 !important;
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 1px 5px 10px rgba(255, 195, 0, 1);
+}
+
+a:visited {
+    color: #eee;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#home {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#projects {
+    padding-top: 100px;
+    /* height: 100vh; */
+}
+
+#skills {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#profiles {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#contact {
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#contact {
+    margin: auto;
+    width: 50vw;
+}
+
+form {
+    margin: auto;
+    text-align: left !important;
+}
+
+input {
+    display: block;
+}
+
+#name {
+    width: 100%;
+    height: 40px;
+}
+
+#email {
+    width: 100%;
+    height: 40px;
+}
+
+#age {
+    width: 100%;
+    height: 40px;
+}
+
+#comments {
+    width: 100%;
+    height: 200px;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#submit:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-nav a {
+        text-align: right !important;
+    }
+    #contact {
+        margin: auto;
+        width: 90vw;
+    }
+}

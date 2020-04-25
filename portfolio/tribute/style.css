@@ -1,0 +1,170 @@
+/* Element Level Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgba(192,192,192,0.3);
+    font-family: 'Calistoga', cursive;
+    font-size: 1.2vw;
+
+  }
+  
+  header {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    width: 100vw;
+  }
+  
+  #img-caption{
+        left: 0px;
+        top: -20px;       
+  }
+
+  blockquote{
+    margin: 10px 10px 10px 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#img-div {
+  background: white;
+  padding: 0px;
+  margin: auto;
+  width: 60vw;
+  height: auto;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+ footer {
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
+        
+  }
+  
+  footer > a {
+        color: black;
+        padding: 10px;
+  }
+  
+  footer > a:hover{
+        text-shadow: 3px 3px 3px grey;
+  }
+    
+  /* Class Level Styling */
+
+.wrapper{
+    overflow-x:hidden;
+}
+
+#title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow:    2px 2px 5px white;
+}
+
+.container{
+    margin: auto;
+    width: 98vw;
+    margin-top: 100px;
+}
+
+
+
+/* ID Level Styling */
+
+
+#tribute-info{
+    clear: both;
+    width: 80vw;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+/* Responsive Styling */
+
+@media screen and (max-width: 1024px) {
+
+body{
+    font-size: 1.7vw;
+}
+
+
+  #img-caption{
+        left: 0px;
+        top: -20px;       
+  }
+
+  blockquote{
+    margin: 10px 10px 10px 10px;
+}
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#img-div {
+  background: white;
+  padding: 0px;
+  margin: auto;
+  width: 60vw;
+  height: auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+body{
+    font-size: 4vw;
+}
+
+  #img-caption{
+        top: -20px;
+        left: 0px;       
+  }
+
+  blockquote{
+    margin: 10px 10px 10px 10px;
+}
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#img-div {
+  background: white;
+  padding: 0px;
+  margin: auto;
+  width: 100vw;
+  height: auto;
+}
+#tribute-info{
+    clear: both;
+    width: 100vw;
+    margin: auto;
+    padding: 30px 10px 10px 10px;
+}
+
+}

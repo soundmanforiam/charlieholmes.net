@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Technical Documentation Website Example</title>
+    <meta name="desription" content="">
+    <meta name="author" content="Charlie Holmes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="body-container">
+        <div class="header-container">
+        <header>
+                <h1>html to WP</h1>
+
+        </header>
+        </div>
+<div class="wrapper">
+
+    <nav id="navbar">
+      <header>html to WP</header>
+        <ul>
+            <a href="#Introduction" class="nav-link">
+                <li>
+                    Introduction
+                </li>
+            </a>
+            <a href="#Create_Files" class="nav-link">
+                <li>
+                    Create Files
+                </li>
+            </a>
+            <a href="#Edit_Style_Sheet" class="nav-link">
+                <li>
+                    Edit Style Sheet
+                </li>
+            </a>
+            <a href="#Split_Old_Site" class="nav-link">
+                <li>
+                    Split Old Site
+                </li>
+            </a>
+            <a href="#header" class="nav-link">
+                <li>
+                    header
+                </li>
+            </a>
+            <a href="#sidebar" class="nav-link">
+                <li>
+                    sidebar
+                </li>
+            </a>
+            <a href="#footer" class="nav-link">
+                <li>
+                    footer
+                </li>
+            </a>
+            <a href="#Style_Sheet" class="nav-link">
+                <li>
+                    style sheet
+                </li>
+            </a>
+            <a href="#index" class="nav-link">
+                <li>
+                    index
+                </li>
+            </a>
+            <a href="#loop" class="nav-link">
+                <li>
+                    loop
+                </li>
+            </a>
+            <a href="#upload" class="nav-link">
+                <li>
+                    upload
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+    <section id="Introduction" class="main-section">
+        <header><h2>Introduction</h2></header>
+        <p>You can take any regular html website and convert it to a Wordpress theme. It may seem daunting, but it is not realy that complicated.</p>
+        <p>First You will need to find an appropriate website to convert. You will want a page that fairly closely represents the layout and look of the entire site. In other words, you don't want to make a Wordpress theme out of a splash page.</p>
+    </section>
+
+    <section id="Create_Files" class="main-section">
+        <header><h2>Create Files</h2></header>
+        <p>Create a new theme folder and name it. Then create the following files:</p>
+        <ul>
+            <li>style.css</li>
+            <li>index.php</li>
+            <li>header.php</li>
+            <li>sidebar.php</li>
+            <li>footer.php</li>
+        </ul>
+    </section>
+
+    <section id="Edit_Style_Sheet" class="main-section">
+        <header><h2>Edit Style Sheet</h2></header>
+        <p>Open your style.css file in your editor program and add the following code at the top:</p>
+
+        <pre>
+        <code>
+        /*
+        Theme Name: Your Theme Name
+        Author: Your Name
+        Author URI: https://yourwebsite.com
+        Description: Describe your theme.
+        Version: 1.0
+        License: GNU General Public License v2 or later
+        License URI: http://www.gnu.org/licenses/gpl-2.0.html
+        */
+        </code>
+        </pre>
+
+        <p>This code provides information to WordPress that it’s a theme stylesheet header. You can edit the details like the theme name, author and URL, description, etc.</p>
+
+        <p>Right after the header, copy and paste your old CSS code into the file. Save and close it.</p>
+
+    </section>
+
+    <section id="Split_Old_Site" class="main-section">
+            <header><h2>Split Old Site</h2></header>
+            <p>WordPress uses PHP to pull information from differnt places to create your page. So, you need to split up your old website’s HTML into different pieces to make sure it can put them together correctly.</p>
+    </section>
+
+    <section id="header" class="main-section">
+            <header><h2>header</h2></header>
+            <p>Open your old static website index.html and copy everything from the beginning of your old HTML code up to the main content area. Paste this code into your header.php file.</p>
+
+            <p>The main content area usually expressed with
+
+                    <code>
+                        &lt;main&gt;
+                    </code>
+
+            or
+
+                    <code>
+                        &lt;div class="main"&gt;
+                    </code>
+
+            </p>
+
+            <p>Additionally, right before the
+                <code>&lt;/head&gt;</code>
+              element, you need to copy and paste this code:
+                <code>&lt;?php wp_head();?&gt;</code>
+               This ensures WordPress plugins work properly. When you finish, save the file.</p>
+
+    </section>
+
+    <section id="sidebar" class="main-section">
+            <header><h2>sidebar</h2></header>
+            <p>sidebar.php</p>
+
+            <p>Copy everything from your sidebar section into the sidebar.php file. Sometimes this will be all inside a
+             <code>&lt;aside&gt;&lt;/aside&gt;</code>
+            tag in your old HTML code.</p>
+    </section>
+
+    <section id="footer" class="main-section">
+            <header><h2>footer</h2></header>
+            <p>Now, everything up to the end of the file should go in the footer.php file.</p>
+
+            <p>Just before the closing <code>&lt;/body&gt;</code> tag, add this code:
+                <br><br>
+                <code>&lt;?php wp_footer();?&gt;</code></p>
+    </section>
+
+    <section id="Style_Sheet" class="main-section">
+            <header><h2>Style Sheet</h2></header>
+            <p>In the header, all you need to do is change the style sheet from HTML to WordPress format. Look for an existing link in the <head> section. In my case, it’s something like this:</p>
+
+            <code>&lt;link rel="stylesheet" type="text/css" media="all" href="style.css" /&gt;</code><br><br><br>
+            <p>Replace it with this line:</p>
+
+            <code>&lt;link rel="stylesheet" href="&lt;?php echo get_template_directory_uri(); ?&gt;/style.css" type="text/css" media="all" /&gt;</code>
+    </section>
+
+    <section id="index" class="main-section">
+            <header><h2>index</h2></header>
+            <p>Let’s turn to the index.php file. It should be blank at the moment, so copy and paste these lines of code:</p>
+            <code>  &lt;?php get_header(); ?&gt;<br>
+                    &lt;?php get_sidebar(); ?&gt;<br>
+                    &lt;?php get_footer(); ?&gt;</code><br><br><br>
+            <p>This code will call for the rest of your WordPress files. You should notice the space between the header and the sidebar. It’s where you’ll add The Loop.</p>
+    </section>
+
+    <section id="loop" class="main-section">
+            <header><h2>loop</h2></header>
+            <p>The Loop will process each post for display, and format it according to how the content matches the criteria within The Loop tags. It’s an important aspect to add dynamic content to your WordPress site.</p>
+            <p>To do so, paste the following code right after
+            <code>&lt;?php get_header(); ?&gt;:</code></p>
+
+            <p>
+                <code><pre>
+&lt;?php while ( have_posts() ) : the_post(); ?&gt;
+&lt;article class="&lt;?php post_class(); ?&gt;" id="post-&lt;?php the_ID(); ?&gt;"&gt;
+&lt;h2 class="entry-title">&lt;?php the_title(); ?&gt;&lt;/h2&gt;
+&lt;?php if ( !is_page() ):?&gt;
+&lt;section class="entry-meta">
+&lt;p&gt;Posted on &lt;?php the_date();?&gt; by &lt;?php the_author();?&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;?php endif; ?&gt;
+&lt;section class="entry-content"&gt;
+&lt;?php the_content(); ?&gt;
+&lt;/section&gt;
+&lt;section class="entry-meta">&lt;?php if ( count( get_the_category() ) ) : ?&gt;
+&lt;span class="category-links">
+Posted under: &lt;?php echo get_the_category_list( ', ' ); ?&gt;
+&lt;/span>
+&lt;?php endif; ?&gt;&lt;/section&gt;
+&lt;/article>
+&lt;?php endwhile; ?&gt;</pre>
+                </code>
+            </p>
+
+            <p>After you finish, save your index.php file and close it. You successfully created a WordPress theme. Now, you can add it to your WordPress site.</p>
+
+    </section>
+
+
+    <section id="upload" class="main-section">
+            <header><h2 >upload</h2></header>
+            <p>After you finish creating the basic theme, you can upload it to WordPress. All files inside your theme folder must be in the same place. To do that, you can zip them.</p>
+
+            <p>Go to your WordPress Admin Dashboard. Go to Appearances -> Themes. Click Add New -> Upload Themes.</p>
+
+            <p>In the menu, locate your theme’s zip file, upload, and click Install Now. After that, don’t forget to activate the theme.</p>
+
+            <p>Now your front end should look like the old site. You should be aware that while the basic design looks the same, there are more things you should do to make the integration better.</p>
+
+            <p>For example, you can’t use WordPress features like the widget area. You also need to adjust CSS markup to make it a part of WordPress’ original design.</p>
+
+    </section>
+
+
+</main>
+    <footer>
+
+
+    </footer>
+
+</div>
+</body>
+</html>

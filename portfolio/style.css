@@ -1,0 +1,189 @@
+/* Element Level Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: radial-gradient(farthest-corner at 10px 10px, red 2%, orange 10%, yellow 15%, #0f001a 30%) ;
+    background-repeat: no-repeat;
+    background-color: #0f001a;
+    background-size: 60vw 100vh;
+    font-family: 'Lato', sans-serif;
+  }
+
+header{
+  display: flex;
+  flex-direction:row;
+  align-content: flex-end;
+  align-items: center;
+}
+
+nav{
+  position: fixed;
+  top: 0px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 99vw;
+  border-bottom: 1px solid white;
+
+}
+
+a{
+    color: white;
+}
+a:visited{
+    color: #eee;
+}
+
+
+#certs{
+  color: white;
+  position: absolute;
+    margin-top: 20vh;
+  text-align: center;
+  width: 100vw;
+  font-size: 2em;
+}
+
+li{
+    list-style: none;
+    color: white;
+    padding: 20px;
+    float: right;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 5px 10px rgba(255, 195, 0, 1);
+    }
+
+main{
+  margin-top: 100px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 10vh;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+
+}
+#projects{
+  padding: 20px;
+
+}
+.project-title{
+    width: 40vw;
+
+}
+
+#profile{
+  height: 100vh;
+}
+#contact{
+  height: 100vh;
+}
+ .profiles{
+   margin-top: 20vh;
+ }
+
+img{
+  width: 40vw;
+  padding-bottom: 20px;
+
+}
+#project-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+#welcome-section{
+  height: 100vh;
+  margin-top: -130px;
+}
+
+#contact{
+  margin: auto;
+  width: 50vw;
+}
+#survery-form-container{
+  margin:auto;
+}
+input{
+  display: block;
+}
+#name{
+  width: 100%;
+  height: 40px;
+}
+#email{
+  width: 100%;
+  height: 40px;
+}
+#age{
+  width: 100%;
+  height: 40px;
+}
+#comments{
+  width: 100%;
+  height: 200px;
+}
+
+#submit{
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#submit:hover{
+background-color: rgba(255, 0, 0, 1);
+}
+
+#skills{
+  margin: auto;
+  width: auto;
+  height: 100vh;
+  }
+
+
+/* Responsive Styling */
+
+ @media screen and (max-width: 800px) {
+
+
+
+body{
+    width:100vw;
+    position: absolute;
+    background-size: 60vw 60vh;
+
+}
+
+li{
+    list-style: none;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    float: right;
+}
+
+img{
+    width: 100vw;
+}
+
+#contact{
+    width: 100vw;
+}
+
+}

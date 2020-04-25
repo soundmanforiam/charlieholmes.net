@@ -1,0 +1,202 @@
+body {
+    background-image: url("http://www.charlieholmes.net/portfolio/survey/img/sheet-music-bg.png");
+    background-size: cover;
+    color: yellow;
+
+}
+
+.wrapper{
+    overflow-x:hidden;
+}
+
+header{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    width: 40vw;
+    height: 100px;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    text-shadow: 2px 2px 5px white;
+
+}
+
+p{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+form{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    width: 60vw;
+    height: auto;
+    text-align: left;
+    padding: 15px;
+    font-size: xx-large;
+    box-shadow: 2px 2px 5px black;
+}
+
+#name{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#email{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#number{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#dropdown{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#most-like{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#comments{
+    width: 95%;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#submit{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+    font-size: x-large;
+}
+
+
+ @media screen and (max-width: 800px) {
+
+body{
+    width:100vw;
+    position: absolute;
+    
+}
+
+header{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    text-shadow: 2px 2px 5px white;
+
+}
+
+p{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+}
+
+form{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    width: 90vw;
+    height: auto;
+    text-align: left;
+    padding: 15px;
+    font-size: large;
+    box-shadow: 2px 2px 5px black;
+}
+
+#name{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#email{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#number{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#dropdown{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#most-like{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#comments{
+    width: 95%;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#submit{
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+    font-size: x-large;
+}
+
+
+}
